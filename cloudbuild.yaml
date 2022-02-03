@@ -4,5 +4,5 @@ steps:
   args: ['package','-Dmaven.test.skip=true']
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/propane-galaxy-339313/springboottest', '--build-arg=JAR_FILE=target/springboot-0.0.1-SNAPSHOT.jar', '.']
-images: ['gcr.io/propane-galaxy-339313/springboottest']
+  args: ['build', '-t', 'gcr.io/propane-galaxy-339313/testspringboot', '--build-arg=JAR_FILE=target/springboot-0.0.1-SNAPSHOT.jar', '.']
+images: ['gcr.io/propane-galaxy-339313/testspringboot']
